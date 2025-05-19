@@ -1,0 +1,46 @@
+.stage-panel {
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  overflow: hidden;
+}
+.stage-area {
+  flex: 1;
+  position: relative;
+  background: #e8f0f8;
+  border-bottom: 1px solid #ddd;
+}
+.sprite {
+  position: absolute;
+  width: 60px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+.sprite.selected {
+  outline: 2px solid #4a90e2;
+}
+.sprite.hero {
+  filter: drop-shadow(0 0 8px gold);
+  transform: scale(1.2);
+}
+.sprite-list {
+  padding: 8px;
+  max-height: 120px;
+  overflow-y: auto;
+  background: #f7f7f7;
+}
+.sprite-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 4px;
+  cursor: pointer;
+}
+.sprite-item.active {
+  background: #d0e7ff;
+}
+.sprite-item button {
+  background: none;
+  border: none;
+  color: #c00;
+  cursor: pointer;
+}
